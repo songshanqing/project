@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 引入网页图标 -->
+		<link rel="icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png">
+		<!-- 引入css样式 -->
+		<link rel="stylesheet" href="../css/fun.css">
+		<!-- 引入jQuery -->
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="top">
+				<div class="nav">
+					<ul class="nav-left">
+						<li class="left-1"><img src="../img/icon.png" alt=""></li>
+						<li class="left-2"><span>MY</span>pets</li>
+					</ul>
+					<ul class="nav-right">
+						<li><a href="../index.html">家</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="gallery.html">画廊</a></li>
+						<li class="active"><a href="fun.html">狗狗趣事</a></li>
+						<li><a href="blog.html">博客</a></li>
+						<li><a href="contact.html">联系</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="m1">
+					<div class="content">
+						<div class="m1-left">
+							<ul class="content">
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-9.png" alt=""></li>
+										<li class="content-right"><a href="fun-one.html">晋江狗狗两次救下主人命</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-4.png" alt=""></li>
+										<li class="content-right"><a href="fun-two.html">极度热爱狗狗的国家：阿根廷</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-8.png" alt=""></li>
+										<li class="content-right"><a href="fun-three.html">巴西专门开办了一家狗狗情侣酒店</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-5.png" alt=""></li>
+										<li class="content-right"><a href="fun-four.html">昏迷主人16小时，英两宠物狗用体温救主</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-6.png" alt=""></li>
+										<li class="content-right"><a href="fun-five.html">美国狗证上的7句话（看到最后，泪流满面）</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul>
+										<li><img src="../img/fun-m1-7.png" alt=""></li>
+										<li class="content-right"><a href="fun-six.html">太土豪了！泰国男子花费一亿元给狗狗做皇冠</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="m1-right">
+							<ul class="num">
+								<li class="active"></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="m2">
+					<div class="content">
+						<h1>订阅每日更新</h1>
+						<input type="text" value="EMAIL" style="width:342px;height:46px;border:1px solid #F4433C;color:#000;outline:none;margin:20px 10px 45px 365px;">
+						<input type="submit" value="提交" style="width:78px;height:48px;background:#F4433C;color:#fff;border:none;margin:20px 0 45px 0px;">
+						<p>FOR HELP <span>pets-care@mail.com</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="content">
+					<h1>跟着我们</h1>
+					<ul>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-1.png" alt=""></div>
+								<div><img src="../img/lx-footer-2.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-3.png" alt=""></div>
+								<div><img src="../img/lx-footer-4.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-5.png" alt=""></div>
+								<div><img src="../img/lx-footer-6.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-8.png" alt=""></div>
+								<div><img src="../img/lx-footer-7.png" alt=""></div>
+							</div>
+						</li>
+					</ul>
+					<p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，篇无法想像没有狗的日子该怎么过。----卡洛琳</p>
+					<p>一只狗带给人的最大快乐就是，当你对它装疯的时候，它不会取笑你，反而会跟你一起疯。——山姆·巴特勒</p>
+					<p class="bottom">版权所有©2015.Company名称的所有权利reserved.More设计<span>模板之家 </span>-从收藏<span>网页模板</span></p>
+				</div>
+				<div class="bottom"><a href="#top"><img src="../img/向上箭头.png" alt=""></a></div>
+			</div>
+		</div>
+		<script>
+			var timer;
+			var index=1;
+			// 当鼠标移入导航栏中对应的li时,对应添加边框
+			$('.nav-right li').mouseover(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+			// m1的轮播图，每隔2s切换图片
+			function run(){
+				index++;
+				if(index>3){
+					index=1;
+				}
+				$('.m1 .m1-right').css('background','url(../img/fun-m1-'+index+'.jpg)')
+				$('.m1 .num li').eq(index-1).addClass('active').siblings().removeClass('active')
+			}
+			timer=setInterval(run,2000)
+			$('.m1 .num li').mouseover(function(){
+				clearInterval(timer);
+				$('.m1 .num li').click(function(){
+					$(this).addClass('active').siblings().removeClass('active')
+					index=$(this).index()+1;
+					$('.m1 .m1-right').css('background','url(../img/fun-m1-'+index+'.jpg)')
+				})
+			})
+			$('.m1 .num li').mouseout(function(){
+				timer=setInterval(run,2000)
+			})
+			// footer轮播图
+			$('.content ul li').mouseenter(function(){
+				// 鼠标移入对应图片时,图片切换
+				$(this).children('.footer-content-1').animate({top:'-44px'},500).find('div').eq(1).css('border','2px solid #4492A2')
+			})
+			$('.content ul li').mouseleave(function(){
+				$(this).children('.footer-content-1').animate({top:'0px'},0)
+			})
+		</script>
+	</body>
+</html>

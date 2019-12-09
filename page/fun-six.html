@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 引入网页图标 -->
+		<link rel="icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png">
+		<!-- 引入css样式 -->
+		<link rel="stylesheet" href="../css/fun-six.css">
+		<!-- 引入jQuery -->
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="top">
+				<div class="nav">
+					<ul class="nav-left">
+						<li class="left-1"><img src="../img/icon.png" alt=""></li>
+						<li class="left-2"><span>MY</span>pets</li>
+					</ul>
+					<ul class="nav-right">
+						<li><a href="../index.html">家</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="gallery.html">画廊</a></li>
+						<li class="active"><a href="fun.html">狗狗趣事</a></li>
+						<li><a href="blog.html">博客</a></li>
+						<li><a href="contact.html">联系</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="content">
+					<h1>太土豪了！泰国男子花费一亿元给狗狗做皇冠</h1>
+					<img src="../img/fun-6.jpg" alt="">
+					<h3>造价上亿元的狗狗皇冠</h3>
+					<h4>许多狗主都非常疼爱自己的狗狗，也愿意花一些费用与心思，帮爱犬选配件。但是亲，您见过真正的“狗狗土豪”吗？他居然给自己的狗狗花费上亿元，来打造了一个狗狗皇冠！</h4>
+					<p>这名“令人不可思议”的狗主是一位泰国珠宝设计师，他叫雷文-吉拉波尔史克。他用母亲送的宝石，为15岁的马尔济斯爱犬“卡诺”，设计一座狗狗皇冠。“狗狗皇冠”由钛制成，镶有250克拉的翡翠和满满的钻石，价值上亿，实在令人瞠目结舌！不过雷文并不打算卖它，纯粹是为了爱犬而设计。还说“下次我要设计狗狗的珠宝发夹，把卡诺过长的毛发夹起来，才不会遮住视线。”</p>
+					<p>这个狗皇冠，足以买下几栋豪宅，远超过一般消费者所能负担范围。天哪，这位泰国珠宝设计师雷文，真是一位不折不扣的爱宠“土豪金”！</p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="content">
+					<h1>跟着我们</h1>
+					<ul>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-1.png" alt=""></div>
+								<div><img src="../img/lx-footer-2.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-3.png" alt=""></div>
+								<div><img src="../img/lx-footer-4.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-5.png" alt=""></div>
+								<div><img src="../img/lx-footer-6.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-8.png" alt=""></div>
+								<div><img src="../img/lx-footer-7.png" alt=""></div>
+							</div>
+						</li>
+					</ul>
+					<p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，篇无法想像没有狗的日子该怎么过。----卡洛琳</p>
+					<p>一只狗带给人的最大快乐就是，当你对它装疯的时候，它不会取笑你，反而会跟你一起疯。——山姆·巴特勒</p>
+					<p class="bottom">版权所有©2015.Company名称的所有权利reserved.More设计<span>模板之家 </span>-从收藏<span>网页模板</span></p>
+				</div>
+				<div class="bottom"><a href="#top"><img src="../img/向上箭头.png" alt=""></a></div>
+			</div>	
+		</div>
+		<script>
+			// 当鼠标移入导航栏中对应的li时,对应添加边框
+			$('.nav-right li').mouseover(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+			// footer轮播图
+			$('.content ul li').mouseenter(function(){
+				// 鼠标移入对应图片时,图片切换
+				$(this).children('.footer-content-1').animate({top:'-44px'},500).find('div').eq(1).css('border','2px solid #4492A2')
+			})
+			$('.content ul li').mouseleave(function(){
+				$(this).children('.footer-content-1').animate({top:'0px'},0)
+			})
+		</script>
+	</body>
+</html>
+
+

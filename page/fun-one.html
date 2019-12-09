@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 引入网页图标 -->
+		<link rel="icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png">
+		<!-- 引入css样式 -->
+		<link rel="stylesheet" href="../css/fun-one.css">
+		<!-- 引入jQuery -->
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="top">
+				<div class="nav">
+					<ul class="nav-left">
+						<li class="left-1"><img src="../img/icon.png" alt=""></li>
+						<li class="left-2"><span>MY</span>pets</li>
+					</ul>
+					<ul class="nav-right">
+						<li><a href="../index.html">家</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="gallery.html">画廊</a></li>
+						<li class="active"><a href="fun.html">狗狗趣事</a></li>
+						<li><a href="blog.html">博客</a></li>
+						<li><a href="contact.html">联系</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="content">
+					<h1>晋江狗狗两次救下主人命</h1>
+					<img src="../img/fun-2.jpg" alt="">
+					<h3>哈巴狗“叶子”照片</h3>
+					<h4 style="text-align:center">在晋江安海，有一条叫“叶子”的哈巴狗。它的主人、南平建阳人蔡女士说，叶子曾两次救了她的命，且极通人性、充满母性。</h4>
+					<p>蔡女士说，1991年的时候，她曾因感情问题，长时间把自己反锁在房间里，试图用刀片割腕。叶子咬着她父亲的裤腿，硬是把他拉到了门前，并用两只前腿敲打着门。她的父亲破门而入，这才及时救了她的命。</p>
+					<p>第二次，已近50岁的蔡女士，血压较高，有时需吃救心丸。有天凌晨4点多，她一起身便感到头晕，虽然意识到这可能是高血压引起中风的征兆，可是本能又让她想躺下休息。就在这时，几步外的叶子和它的女儿“阿福”，就用力咬住她的裤脚。蔡女士回忆，当时被两条狗这么一咬，她意识到自己不能睡下去，便艰难地撑住坐在床头，取了救心丸服下，手机按好了110和120，以备随时拨打。</p>
+					<p>而叶子，也陪着她坐了2个多小时，直到清晨6点多，她头晕稍稍减轻了，拨120去了医院，这才又保住了自己的性命。“叶子”真是一只好狗狗！</p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="content">
+					<h1>跟着我们</h1>
+					<ul>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-1.png" alt=""></div>
+								<div><img src="../img/lx-footer-2.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-3.png" alt=""></div>
+								<div><img src="../img/lx-footer-4.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-5.png" alt=""></div>
+								<div><img src="../img/lx-footer-6.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-8.png" alt=""></div>
+								<div><img src="../img/lx-footer-7.png" alt=""></div>
+							</div>
+						</li>
+					</ul>
+					<p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，篇无法想像没有狗的日子该怎么过。----卡洛琳</p>
+					<p>一只狗带给人的最大快乐就是，当你对它装疯的时候，它不会取笑你，反而会跟你一起疯。——山姆·巴特勒</p>
+					<p class="bottom">版权所有©2015.Company名称的所有权利reserved.More设计<span>模板之家 </span>-从收藏<span>网页模板</span></p>
+				</div>
+				<div class="bottom"><a href="#top"><img src="../img/向上箭头.png" alt=""></a></div>
+			</div>	
+		</div>
+		<script>
+			// 当鼠标移入导航栏中对应的li时,对应添加边框
+			$('.nav-right li').mouseover(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+			// footer轮播图
+			$('.content ul li').mouseenter(function(){
+				// 鼠标移入对应图片时,图片切换
+				$(this).children('.footer-content-1').animate({top:'-44px'},500).find('div').eq(1).css('border','2px solid #4492A2')
+			})
+			$('.content ul li').mouseleave(function(){
+				$(this).children('.footer-content-1').animate({top:'0px'},0)
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,83 @@
+/* 网页常见样式 */
+*{margin:0;padding:0}
+li{list-style:none;}
+a{text-decoration:none;}
+
+/* 头部样式 */
+div.wrap>div.header{width:100%;height:80px;border-bottom:1px solid #F44336;overflow:hidden;}
+div.wrap>div.header>div.nav{width:1140px;height:40px;margin:20px auto;}
+div.wrap>div.header>div.nav>ul.nav-left{width:150px;height:40px;float:left;}
+div.wrap>div.header>div.nav>ul.nav-left>li{float:left}
+div.wrap>div.header>div.nav>ul.nav-left>li.left-1{width:29px;height:40px;float:left}
+div.wrap>div.header>div.nav>ul.nav-left>li.left-2{font:800 30px 微软雅黑;line-height:40px;margin-left:5px;}
+div.wrap>div.header>div.nav>ul.nav-left>li.left-2>span{color:#f44336}
+div.wrap>div.header>div.nav>ul.nav-right{width:365px;height:40px;float:right;}
+div.wrap>div.header>div.nav>ul.nav-right>li{float:left;margin-left:26px;line-height:40px;}
+div.wrap>div.header>div.nav>ul.nav-right>li.active{border-bottom:2px solid #f44336}
+div.wrap>div.header>div.nav>ul.nav-right>li>a{color:#000}
+div.wrap>div.header>div.nav>ul.nav-right>li>a:hover{color:#f44336}
+
+/* 网页主体内容 */
+/* m1样式 */
+div.wrap>div.main>div.m1{width:100%;height:574px;background:#ECF0F1;overflow:hidden}
+div.wrap>div.main>div.m1>div.content{width:1140px;height:457px;margin:70px auto}
+div.wrap>div.main>div.m1>div.content>div.m1-left{width:458px;height:457px;float:left;margin-left:-570px;}
+div.wrap>div.main>div.m1>div.content>div.m1-left>div{width:218px;height:218px;}
+div.wrap>div.main>div.m1>div.content>div.m1-left>div.m1-left-2{margin:20px 0 0 240px;}
+div.wrap>div.main>div.m1>div.content>div.m1-left>div>img{width:100%;height:100%}
+div.wrap>div.main>div.m1>div.content>div.m1-left>div:hover>img{opacity:0.6}
+div.wrap>div.main>div.m1>div.content>div.m1-right{width:650px;height:457px;float:right;margin-right:-890px;}
+div.wrap>div.main>div.m1>div.content>div.m1-right>h1{font:30px Roboto;margin-bottom:20px;}
+div.wrap>div.main>div.m1>div.content>div.m1-right>p{font:14.56px Roboto;color:#999;line-height:26px;}
+
+/* m2样式 */
+div.wrap>div.main>div.m2{width:100%;height:540px;background:#ECF0F1;overflow:hidden}
+div.wrap>div.main>div.m2>div.content{width:1140px;height:540px;margin:0px auto}
+div.wrap>div.main>div.m2>div.content>ul.content1{width:1140px;height:485px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li{width:365px;height:485px;float:left;margin-left:0 5px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li.active{margin:0 22px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>h4{font:25.6px Roboto;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>img{display:block;witdh:365px;height:243px;margin:20px 0px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>p{font:15px Roboto;color:#777;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>div.m2-button{width:134px;height:43px;background:#C0392B;margin-top:20px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>div.m2-button>a{font:800 16px Roboto;color:#fff;margin-left:36px;line-height:43px;}
+div.wrap>div.main>div.m2>div.content>ul.content1>li>div.m2-button:hover{background:#333333}
+div.wrap>div.main>div.m2>div.content>ul.content2{width:332px;height:34px;margin:0 auto;margin-top:20px;}
+div.wrap>div.main>div.m2>div.content>ul.content2>li{width:40px;height:30px;float:left;margin:0 5px;border:1px solid #333;}
+div.wrap>div.main>div.m2>div.content>ul.content2>li>a{display:block;line-height:30px;color:#000;text-align:center}
+div.wrap>div.main>div.m2>div.content>ul.content2>li.active1{width:50px;height:30px;}
+div.wrap>div.main>div.m2>div.content>ul.content2>li.active2{color:#000;border:none;}
+div.wrap>div.main>div.m2>div.content>ul.content2>li:not(.active2):hover{background:#333333;border:1px solid #333333;}
+div.wrap>div.main>div.m2>div.content>ul.content2>li:not(.active2):hover>a{color:#fff}
+/* m3样式 */
+div.wrap>div.main>div.m3{width:100%;height:657px;overflow:hidden;background:#ECF0F1}
+div.wrap>div.main>div.m3>div.content{width:1140px;height:510px;margin:50px auto}
+div.wrap>div.main>div.m3>div.content>div.m3-left{width:500px;height:510px;float:left;margin-left:-600px;}
+div.wrap>div.main>div.m3>div.content>div.m3-left>h1{font:30px Roboto;margin-bottom:10px;}
+div.wrap>div.main>div.m3>div.content>div.m3-left>p{font:16px Roboto;color:#777;}
+div.wrap>div.main>div.m3>div.content>div.m3-left>div.m3-button{width:134px;height:43px;background:#C0392B;margin-top:10px;}
+div.wrap>div.main>div.m3>div.content>div.m3-left>div.m3-button>a{font:800 16px Roboto;color:#fff;margin-left:36px;line-height:43px;}
+div.wrap>div.main>div.m3>div.content>div.m3-left>div.m3-button:hover{background:#333333}
+div.wrap>div.main>div.m3>div.content>div.m3-right{width:600px;height:510px;float:right;position:relative;}
+div.wrap>div.main>div.m3>div.content>div.m3-right>ul>li{width:600px;height:100px;position:absolute;}
+div.wrap>div.main>div.m3>div.content>div.m3-right>ul>li>div{width:480px;height:100px;float:right;}
+div.wrap>div.main>div.m3>div.content>div.m3-right>ul>li>div>span{font:20px Roboto;color:#C0392B;}
+div.wrap>div.main>div.m3>div.content>div.m3-right>ul>li>div>p{font:16px Roboto;color:#777;}
+div.wrap>div.main>div.m3>div.content>div.m3-right>ul>li>img{display:block;width:100px;height:100px;float:left;}
+
+
+/* footer样式 */
+div.wrap>div.footer{width:100%;height:260px;background:#444444;position:relative;overflow:hidden}
+div.wrap>div.footer>div.content{width:1140px;height:180px;margin:40px auto;}
+div.wrap>div.footer>div.content>h1{font:30px Roboto;color:#fff}
+div.wrap>div.footer>div.content>ul{width:256px;height:84px;}
+div.wrap>div.footer>div.content>ul>li{width:44px;height:44px;float:left;margin:20px 20px 20px 0px;position:relative;overflow:hidden;}
+div.wrap>div.footer>div.content>ul>li>div.footer-content-1{width:84px;height:84px;position:absolute;left:0;top:0;}
+div.wrap>div.footer>div.content>ul>li>div.footer-content-1>div{width:40px;height:40px;border:2px solid #565656;border-radius:21px;}
+div.wrap>div.footer>div.content>ul>li>div.footer-content-1>div>img{width:100%;}
+div.wrap>div.footer>div.content>p{color:#fff;font:16px Roboto;margin-bottom:3px;}
+div.wrap>div.footer>div.content>p.bottom{margin-top:20px;}
+div.wrap>div.footer>div.content>p.bottom>span{color:#F44336}
+/* bottom样式 */
+div.wrap>div.footer>div.bottom{width:50px;height:50px;position:absolute;bottom:20px;right:50px;}
+div.wrap>div.footer>div.bottom>a>img{width:100%;height:100%;}

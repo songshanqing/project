@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 引入网页图标 -->
+		<link rel="icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png">
+		<!-- 引入css样式 -->
+		<link rel="stylesheet" href="../css/fun-three.css">
+		<!-- 引入jQuery -->
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="top">
+				<div class="nav">
+					<ul class="nav-left">
+						<li class="left-1"><img src="../img/icon.png" alt=""></li>
+						<li class="left-2"><span>MY</span>pets</li>
+					</ul>
+					<ul class="nav-right">
+						<li><a href="../index.html">家</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="gallery.html">画廊</a></li>
+						<li class="active"><a href="fun.html">狗狗趣事</a></li>
+						<li><a href="blog.html">博客</a></li>
+						<li><a href="contact.html">联系</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="content">
+					<h1>巴西专门开办了一家狗狗情侣酒店</h1>
+					<img src="../img/fun-3.jpg" alt="">
+					<h3>狗狗情侣酒店</h3>
+					<h4>据英国《每日电讯报》7月11日报道，巴西是仅次于美国的世界第二大养狗国家，全国共有约3200万条狗。当地一对兄妹从人类的“情侣酒店(love hotel)”中获得灵感，专门开办了一家狗狗情侣酒店，为可爱的宠物狗们提供幽会的场所。</h4>
+					<p>法比亚诺·罗德斯（Fabiano Lourdes）与妹妹丹妮拉（Daniela）在贝洛哈里桑塔市（Belo Horizonte）开办的狗狗情侣酒店将于本周开业。酒店的每个房间每天费用50美元（约合人民币318元），天花板上镶嵌着心形的镜子，地板上铺设了红色垫子，室内灯光昏暗暧昧，为“狗狗情侣”们提供了充分的浪漫气氛。</p>
+					<p>酒店内还将开设宠物健身中心、狗狗生日会所等，并附带销售一些奢侈的宠物用品，比如标价1000美元（约合人民币6370元）的施华洛世奇水晶狗项圈。法比亚诺称：“对许多人来说，狗就像自己的孩子，必须受到良好对待。我们的市场调查显示，人们总是忙于工作，不知道该将宠物放在哪里交配。”</p>
+					<p>罗德斯兄妹已经为这家酒店投资了100多万美元（约合人民币637万元），聘请了60名工作人员，包括兽医、生物学家。他们希望酒店每月的收入能超过30万美元（约合人民币191万元）。</p>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="content">
+					<h1>跟着我们</h1>
+					<ul>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-1.png" alt=""></div>
+								<div><img src="../img/lx-footer-2.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-3.png" alt=""></div>
+								<div><img src="../img/lx-footer-4.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-5.png" alt=""></div>
+								<div><img src="../img/lx-footer-6.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-8.png" alt=""></div>
+								<div><img src="../img/lx-footer-7.png" alt=""></div>
+							</div>
+						</li>
+					</ul>
+					<p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，篇无法想像没有狗的日子该怎么过。----卡洛琳</p>
+					<p>一只狗带给人的最大快乐就是，当你对它装疯的时候，它不会取笑你，反而会跟你一起疯。——山姆·巴特勒</p>
+					<p class="bottom">版权所有©2015.Company名称的所有权利reserved.More设计<span>模板之家 </span>-从收藏<span>网页模板</span></p>
+				</div>
+				<div class="bottom"><a href="#top"><img src="../img/向上箭头.png" alt=""></a></div>
+			</div>	
+		</div>
+		<script>
+			// 当鼠标移入导航栏中对应的li时,对应添加边框
+			$('.nav-right li').mouseover(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+			// footer轮播图
+			$('.content ul li').mouseenter(function(){
+				// 鼠标移入对应图片时,图片切换
+				$(this).children('.footer-content-1').animate({top:'-44px'},500).find('div').eq(1).css('border','2px solid #4492A2')
+			})
+			$('.content ul li').mouseleave(function(){
+				$(this).children('.footer-content-1').animate({top:'0px'},0)
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 引入网页图标 -->
+		<link rel="icon" href="../img/icon.png">
+		<link rel="shortcut icon" href="../img/icon.png">
+		<!-- 引入css样式 -->
+		<link rel="stylesheet" href="../css/contact.css">
+		<!-- 引入jQuery -->
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="top">
+				<div class="nav">
+					<ul class="nav-left">
+						<li class="left-1"><img src="../img/icon.png" alt=""></li>
+						<li class="left-2"><span>MY</span>pets</li>
+					</ul>
+					<ul class="nav-right">
+						<li><a href="../index.html">家</a></li>
+						<li><a href="about.html">关于</a></li>
+						<li><a href="gallery.html">画廊</a></li>
+						<li><a href="fun.html">狗狗趣事</a></li>
+						<li><a href="blog.html">博客</a></li>
+						<li class="active"><a href="contact.html">联系</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="m1">
+					<div class="content">
+						<h1>联系我们</h1>
+						<div class="m1-left">
+							<p>名字</p>
+							<input type="text"><br>
+							<p>E-mail</p>
+							<input type="text"><br>
+							<p>电话</p>
+							<input type="text"><br>
+						</div>
+						<div class="m1-right">
+							<p>信息</p>
+							<textarea name="" id="" cols="30" rows="10"></textarea><br>
+							<input value="提交" type="submit">
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="m2">
+					<div class="content">
+						<div class="m2-left">
+							<h1>地点</h1>
+							<p>重庆市秀山县</p>
+							<p>电话1：150 2368 9535</p>
+							<p>电话2：187 5685 9224</p>
+							<p>电子邮箱：songshanqing.com</p>
+							<p>微博：fdf5d552fd5f55d</p>
+							<p>公众号：叭叭叭叭叭公众号</p>
+						</div>
+						<div class="m2-right">
+							<h1>在这里找我们</h1>
+							<iframe src="https://www.amap.com/" frameborder="0" width="800px" height="215px"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="content">
+					<h1>跟着我们</h1>
+					<ul>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-1.png" alt=""></div>
+								<div><img src="../img/lx-footer-2.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-3.png" alt=""></div>
+								<div><img src="../img/lx-footer-4.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-5.png" alt=""></div>
+								<div><img src="../img/lx-footer-6.png" alt=""></div>
+							</div>
+						</li>
+						<li>
+							<div class="footer-content-1">
+								<div><img src="../img/lx-footer-8.png" alt=""></div>
+								<div><img src="../img/lx-footer-7.png" alt=""></div>
+							</div>
+						</li>
+					</ul>
+					<p>不曾养过狗的人，很难想像与狗一起生活是什么样子，养过狗的人，篇无法想像没有狗的日子该怎么过。----卡洛琳</p>
+					<p>一只狗带给人的最大快乐就是，当你对它装疯的时候，它不会取笑你，反而会跟你一起疯。——山姆·巴特勒</p>
+					<p class="bottom">版权所有©2015.Company名称的所有权利reserved.More设计<span>模板之家 </span>-从收藏<span>网页模板</span></p>
+				</div>
+				<div class="bottom"><a href="#top"><img src="../img/向上箭头.png" alt=""></a></div>
+			</div>
+		</div>
+		<script>
+			// 当鼠标移入导航栏中对应的li时,对应添加边框
+			$('.nav-right li').mouseenter(function(){
+				$(this).addClass('active').siblings().removeClass('active')
+			})
+				$('.content ul li').mouseover(function(){
+					$(this).children('.footer-content-1').animate({top:'-44px'},500).find('div').eq(1).css('border','2px solid #4492A2')
+				})
+				$('.content ul li').mouseleave(function(){
+					$(this).children('.footer-content-1').animate({top:'0px'},0)
+				})
+			
+		</script>
+	</body>
+</html>
